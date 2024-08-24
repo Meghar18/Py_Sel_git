@@ -27,10 +27,11 @@ driver=webdriver. Chrome(options=opts)
 # driver.find_element('id',"register-button").click()
 # driver.find_element('partial link text','Apparel').click()
 
-driver.get('https://www.myntra.com/')
-driver.find_element('xpath','//input[@class="desktop-searchBar"]').send_keys("Adidas Shoes")
-driver.find_element('xpath',"//a[@class='desktop-submit']").click()
-shoe_name=driver.find_elements('xpath','//h4[@class="product-product"]')
-shoe_price=driver.find_elements('xpath','//div[@class="product-price"]')
-for name, price in zip(shoe_name,shoe_price):
-    print(name.text," = ",price.text)
+# driver.get('https://www.myntra.com/')
+# driver.find_element('xpath','//input[@class="desktop-searchBar"]').send_keys("Adidas Shoes")
+# driver.find_element('xpath',"//a[@class='desktop-submit']").click()
+# shoe_name=driver.find_elements('xpath','//h4[@class="product-product"]')
+# shoe_price=driver.find_elements('xpath','//div[@class="product-price"]')
+# for name, price in zip(shoe_name,shoe_price):
+#     print(name.text," = ",price.text)
+
