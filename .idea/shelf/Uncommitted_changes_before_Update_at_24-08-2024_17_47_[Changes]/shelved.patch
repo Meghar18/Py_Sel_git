@@ -1,0 +1,197 @@
+Index: test_sel/test_custom.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test_sel/test_custom.py b/test_sel/test_custom.py
+new file mode 100644
+--- /dev/null	(date 1723012670375)
++++ b/test_sel/test_custom.py	(date 1723012670375)
+@@ -0,0 +1,18 @@
++from pytest import mark
++class TestCalci:
++    a=14
++    b=4
++    @mark.smoke
++    def test_addition(self):
++        print(self.a+self.b)
++    @mark.regression
++    def test_subtraction(self):
++        assert self.a-self.b==10,"difference is not 10"
++        print("test_sub is executing")
++
++    def test_multiplication(self):
++        assert True,"always fails"
++    @mark.regression
++    @mark.smoke
++    def test_division(self):
++        assert self.a/self.b!=0 , "quotient is zero"
+\ No newline at end of file
+Index: test_sel/test_basic.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test_sel/test_basic.py b/test_sel/test_basic.py
+new file mode 100644
+--- /dev/null	(date 1723007390365)
++++ b/test_sel/test_basic.py	(date 1723007390365)
+@@ -0,0 +1,5 @@
++class TestDemo:
++    def test_case1(self):
++        print("in testcase1")
++    def test_case2(self):
++        print("in test case2")
+Index: test_sel/db_connection.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test_sel/db_connection.py b/test_sel/db_connection.py
+new file mode 100644
+--- /dev/null	(date 1722958355504)
++++ b/test_sel/db_connection.py	(date 1722958355504)
+@@ -0,0 +1,1 @@
++import mysql.connector
+\ No newline at end of file
+Index: test_sel/test_markers.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test_sel/test_markers.py b/test_sel/test_markers.py
+new file mode 100644
+--- /dev/null	(date 1723011875735)
++++ b/test_sel/test_markers.py	(date 1723011875735)
+@@ -0,0 +1,48 @@
++from pytest import mark
++# class TestCalculator:
++#     a=10
++#     b=0
++#     @mark.skip("test case working fine")
++#     def test_add(self):
++#         print(self.a+self.b)
++#
++#     def test_sub(self):
++#         assert self.a-self.b , "difference is not 10"
++#     @mark.xfail
++#     def test_mul(self):
++#         assert True,"always fails"
++#     @mark.skipif(b==0,reason="denominator is 0")
++#     def test_div(self):
++#         assert self.a/self.b,"quotient is zero"
++
++# @mark.parametrize("num",[1,2,3])
++# def test_even(num):
++#     assert num%2==0,f"{num} is odd number"
++
++# @mark.parametrize("num1,num2,result",[(1,2,3),(4,5,6)])
++# def test_add(num1,num2,result):
++#     assert num1+num2==result,f"sum of {num1} and {num2} are not equal to {result} "
++
++# @mark.dependency(name='a')
++# def test_a():
++#     assert True
++# @mark.dependency(name='b')
++# def test_b():
++#     assert False
++#
++# @mark.dependency(dependency=['a','b'])
++# def test_c():
++#     assert True
++from selenium import pytest
++from pytest import pytest_ordering
++from pytest_ordering import order
++@order(2)
++def test_a():
++    assert True
++@order(3)
++def test_b():
++    assert False
++
++@order(1)
++def test_c():
++    assert True
+\ No newline at end of file
+Index: test_sel/CSV_File_Handling.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test_sel/CSV_File_Handling.py b/test_sel/CSV_File_Handling.py
+new file mode 100644
+--- /dev/null	(date 1722753552076)
++++ b/test_sel/CSV_File_Handling.py	(date 1722753552076)
+@@ -0,0 +1,71 @@
++import csv
++# path=r"C:\Users\Megha R\Desktop\\"
++# with open(path+"demo.csv",'w') as f:
++    # reader_obj=csv.reader(f)
++    # for row in reader_obj:
++    #     print(row)
++    # reader_obj=csv.DictReader(f)
++    # for row in reader_obj:
++    #     print(row["TC_ID"],row["TC Name"])
++    # writer_obj=csv.writer(f)
++    # writer_obj.writerow(["ID","Name","Phone_no"])
++    # writer_obj.writerow([123,"adam",9898877687])
++    # writer_obj.writerow([124,"Aahil",9899546576])
++    # data=(["Name","Mob_no"],["Kiran",7760944539],["MGS",9141125995],["HNR",9632093748],["Megha",9916464577])
++    # writer_obj.writerows(data)
++# with open (path+"demo_dict.csv","w") as fw:
++#     write_ob=csv.DictWriter(fw,["a","b","c","d"])
++#     write_ob.writeheader()
++#     data=({"a":1,"b":4,"c":7,"d":5},{"a":8,"b":9})
++#     write_ob.writerows(data)
++# path=r"C:\Users\Megha R\Downloads\test.csv"
++# with open(path) as f:
++    # read_obj=csv.reader(f)
++    # header=next(read_obj)
++    # for row in read_obj:
++    #     if float(row[2])>90:
++    #         print(row[0],row[2])
++    # read_obj=csv.DictReader(f)
++    # header=next(read_obj)
++    # for row in read_obj:
++    #     if float(row["price"])>20:
++    #         print(row["name"],row["price"])
++
++path=r"C:\Users\Megha R\Downloads\employees.csv"
++# with open(path,"r")as f:
++#     # read_obj=csv.reader(f)
++#     d={}
++#     read_obj=csv.DictReader(f)
++#     for row in read_obj:
++#         if row["gender"] not in d:
++#             d[row["gender"]]=[row["name"]]
++#         else:
++#             d[row["gender"]]+=[row["name"]]
++# print(d)
++# with open(path,"r") as f:
++#     d={}
++#     read_obj=csv.DictReader(f)
++#     for row in read_obj:
++#         if row["team"] not in d:
++#             d[row["team"]]=row["name"]
++#         else:
++#             d[row["team"]]+=" "+row["name"]
++#     print(d)
++# d={}
++# with open(path,"r")as f:
++#     read_obj=csv.DictReader(f)
++#     for row in read_obj:
++#         if float(row["pay"])>70000:
++#            print(row["name"])
++p=r"C:\Users\Megha R\Downloads\vaccination_data.csv"
++with open(p,"r") as f:
++    reader_obj=csv.DictReader(f)
++    sum=0
++    countries=0
++    for row in reader_obj:
++        if row["TOTAL_VACCINATIONS"]:
++            sum+=int(row["TOTAL_VACCINATIONS"])
++        if row["COUNTRY"] :
++            countries+=1
++    print(countries)
++    print(sum)
+\ No newline at end of file

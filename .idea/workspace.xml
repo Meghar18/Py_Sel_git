@@ -10,12 +10,13 @@
       <change afterPath="$PROJECT_DIR$/test_sel/test_basic.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test_sel/test_custom.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test_sel/test_markers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Py_Sel_git" beforeDir="false" afterPath="$PROJECT_DIR$/Py_Sel_git" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Py_Sel_git/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Py_Sel_git/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic_demo/Py_Sel_git" beforeDir="false" afterPath="$PROJECT_DIR$/basic_demo/Py_Sel_git" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_demo/Py_Sel_git/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/basic_demo/Py_Sel_git/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropdown_box.py" beforeDir="false" afterPath="$PROJECT_DIR$/dropdown_box.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_demo/dependencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic_demo/dependencies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_sel" beforeDir="false" afterPath="$PROJECT_DIR$/test_sel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +31,14 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/basic_demo/Py_Sel_git" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -56,6 +64,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Megha R\PycharmProjects\Py_Selenium_Git\basic_demo" />
       <recent name="C:\Users\Megha R\PycharmProjects\Py_Selenium_Git\test_sel" />
     </key>
   </component>
@@ -78,25 +87,45 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test_sel/CSV_File_Handling.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add new file&#10;basic py file added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new file&#10;basic py file added" />
   </component>
 </project>

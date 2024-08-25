@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Py_Sel_git" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/basic_demo/Py_Sel_git" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/basic_demo/Py_Sel_git/My_Selenium_repo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/test_sel" vcs="Git" />
   </component>
 </project>
